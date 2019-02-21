@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#ifndef NULLSAFE_ENABLED
-#define NULLSAFE_ENABLED 1
-#endif
-
 static NSArray *respondClasses;
 
 @implementation NSNull (QiNullSafe)
