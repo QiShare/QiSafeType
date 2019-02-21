@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE1812D0221D70C900319E9C /* QiMessageForwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1812CF221D70C900319E9C /* QiMessageForwardViewController.m */; };
+		EE1812D3221D713500319E9C /* QiMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1812D2221D713500319E9C /* QiMessage.m */; };
+		EE1812DC221E244D00319E9C /* NSNull+QiNullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1812DB221E244D00319E9C /* NSNull+QiNullSafe.m */; };
+		EED2D5A6221BE83200396C42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EED2D5A5221BE83200396C42 /* AppDelegate.m */; };
+		EED2D5AC221BE83200396C42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED2D5AA221BE83200396C42 /* Main.storyboard */; };
+		EED2D5AE221BE83300396C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED2D5AD221BE83300396C42 /* Assets.xcassets */; };
+		EED2D5B1221BE83300396C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED2D5AF221BE83300396C42 /* LaunchScreen.storyboard */; };
+		EED2D5B4221BE83300396C42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EED2D5B3221BE83300396C42 /* main.m */; };
+		EED2D5C5221BE8B200396C42 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EED2D5BA221BE8B100396C42 /* Person.m */; };
+		EED2D5C7221BE8B200396C42 /* NSObject+QiAvoidCommonCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = EED2D5BF221BE8B100396C42 /* NSObject+QiAvoidCommonCrash.m */; };
+		EED2D5C8221BE8B200396C42 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = EED2D5C1221BE8B200396C42 /* NullSafe.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE1812CE221D70C900319E9C /* QiMessageForwardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiMessageForwardViewController.h; sourceTree = "<group>"; };
+		EE1812CF221D70C900319E9C /* QiMessageForwardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiMessageForwardViewController.m; sourceTree = "<group>"; };
+		EE1812D1221D713500319E9C /* QiMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiMessage.h; sourceTree = "<group>"; };
+		EE1812D2221D713500319E9C /* QiMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiMessage.m; sourceTree = "<group>"; };
+		EE1812DB221E244D00319E9C /* NSNull+QiNullSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNull+QiNullSafe.m"; sourceTree = "<group>"; };
+		EED2D5A1221BE83200396C42 /* QiSafeType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiSafeType.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED2D5A4221BE83200396C42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EED2D5A5221BE83200396C42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EED2D5AB221BE83200396C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EED2D5AD221BE83300396C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EED2D5B0221BE83300396C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EED2D5B2221BE83300396C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED2D5B3221BE83300396C42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EED2D5BA221BE8B100396C42 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		EED2D5BC221BE8B100396C42 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		EED2D5BE221BE8B100396C42 /* NSObject+QiAvoidCommonCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+QiAvoidCommonCrash.h"; sourceTree = "<group>"; };
+		EED2D5BF221BE8B100396C42 /* NSObject+QiAvoidCommonCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QiAvoidCommonCrash.m"; sourceTree = "<group>"; };
+		EED2D5C1221BE8B200396C42 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EED2D59E221BE83200396C42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EED2D598221BE83200396C42 = {
+			isa = PBXGroup;
+			children = (
+				EED2D5A3221BE83200396C42 /* QiSafeType */,
+				EED2D5A2221BE83200396C42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EED2D5A2221BE83200396C42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED2D5A1221BE83200396C42 /* QiSafeType.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EED2D5A3221BE83200396C42 /* QiSafeType */ = {
+			isa = PBXGroup;
+			children = (
+				EE1812CE221D70C900319E9C /* QiMessageForwardViewController.h */,
+				EE1812CF221D70C900319E9C /* QiMessageForwardViewController.m */,
+				EE1812D1221D713500319E9C /* QiMessage.h */,
+				EE1812D2221D713500319E9C /* QiMessage.m */,
+				EED2D5A4221BE83200396C42 /* AppDelegate.h */,
+				EED2D5A5221BE83200396C42 /* AppDelegate.m */,
+				EED2D5C0221BE8B200396C42 /* NullSafe */,
+				EED2D5BD221BE8B100396C42 /* QiAvoidCommonCrash */,
+				EED2D5BC221BE8B100396C42 /* Person.h */,
+				EED2D5BA221BE8B100396C42 /* Person.m */,
+				EED2D5AA221BE83200396C42 /* Main.storyboard */,
+				EED2D5AD221BE83300396C42 /* Assets.xcassets */,
+				EED2D5AF221BE83300396C42 /* LaunchScreen.storyboard */,
+				EED2D5B2221BE83300396C42 /* Info.plist */,
+				EED2D5B3221BE83300396C42 /* main.m */,
+			);
+			path = QiSafeType;
+			sourceTree = "<group>";
+		};
+		EED2D5BD221BE8B100396C42 /* QiAvoidCommonCrash */ = {
+			isa = PBXGroup;
+			children = (
+				EED2D5BE221BE8B100396C42 /* NSObject+QiAvoidCommonCrash.h */,
+				EED2D5BF221BE8B100396C42 /* NSObject+QiAvoidCommonCrash.m */,
+			);
+			path = QiAvoidCommonCrash;
+			sourceTree = "<group>";
+		};
+		EED2D5C0221BE8B200396C42 /* NullSafe */ = {
+			isa = PBXGroup;
+			children = (
+				EED2D5C1221BE8B200396C42 /* NullSafe.m */,
+				EE1812DB221E244D00319E9C /* NSNull+QiNullSafe.m */,
+			);
+			path = NullSafe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EED2D5A0221BE83200396C42 /* QiSafeType */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED2D5B7221BE83300396C42 /* Build configuration list for PBXNativeTarget "QiSafeType" */;
+			buildPhases = (
+				EED2D59D221BE83200396C42 /* Sources */,
+				EED2D59E221BE83200396C42 /* Frameworks */,
+				EED2D59F221BE83200396C42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QiSafeType;
+			productName = QiSafeType;
+			productReference = EED2D5A1221BE83200396C42 /* QiSafeType.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EED2D599221BE83200396C42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = QiShare;
+				TargetAttributes = {
+					EED2D5A0221BE83200396C42 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = EED2D59C221BE83200396C42 /* Build configuration list for PBXProject "QiSafeType" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EED2D598221BE83200396C42;
+			productRefGroup = EED2D5A2221BE83200396C42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EED2D5A0221BE83200396C42 /* QiSafeType */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EED2D59F221BE83200396C42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED2D5B1221BE83300396C42 /* LaunchScreen.storyboard in Resources */,
+				EED2D5AE221BE83300396C42 /* Assets.xcassets in Resources */,
+				EED2D5AC221BE83200396C42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EED2D59D221BE83200396C42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE1812D3221D713500319E9C /* QiMessage.m in Sources */,
+				EED2D5C7221BE8B200396C42 /* NSObject+QiAvoidCommonCrash.m in Sources */,
+				EED2D5B4221BE83300396C42 /* main.m in Sources */,
+				EED2D5C5221BE8B200396C42 /* Person.m in Sources */,
+				EE1812DC221E244D00319E9C /* NSNull+QiNullSafe.m in Sources */,
+				EE1812D0221D70C900319E9C /* QiMessageForwardViewController.m in Sources */,
+				EED2D5C8221BE8B200396C42 /* NullSafe.m in Sources */,
+				EED2D5A6221BE83200396C42 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EED2D5AA221BE83200396C42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED2D5AB221BE83200396C42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EED2D5AF221BE83300396C42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED2D5B0221BE83300396C42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EED2D5B5221BE83300396C42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EED2D5B6221BE83300396C42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EED2D5B8221BE83300396C42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZX24TX624;
+				INFOPLIST_FILE = QiSafeType/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qishare.ios.wyw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EED2D5B9221BE83300396C42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZX24TX624;
+				INFOPLIST_FILE = QiSafeType/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qishare.ios.wyw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EED2D59C221BE83200396C42 /* Build configuration list for PBXProject "QiSafeType" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED2D5B5221BE83300396C42 /* Debug */,
+				EED2D5B6221BE83300396C42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED2D5B7221BE83300396C42 /* Build configuration list for PBXNativeTarget "QiSafeType" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED2D5B8221BE83300396C42 /* Debug */,
+				EED2D5B9221BE83300396C42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EED2D599221BE83200396C42 /* Project object */;
+}
