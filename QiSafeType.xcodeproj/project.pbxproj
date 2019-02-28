@@ -10,6 +10,12 @@
 		EE1812D0221D70C900319E9C /* QiMessageForwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1812CF221D70C900319E9C /* QiMessageForwardViewController.m */; };
 		EE1812D3221D713500319E9C /* QiMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1812D2221D713500319E9C /* QiMessage.m */; };
 		EE1812DC221E244D00319E9C /* NSNull+QiNullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1812DB221E244D00319E9C /* NSNull+QiNullSafe.m */; };
+		EE1C5BB622227E4500CEC8C4 /* QiSubArray.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1C5BB522227E4500CEC8C4 /* QiSubArray.m */; };
+		EE1C85C022202D4D00FC2E77 /* QiSafeTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1C85BF22202D4D00FC2E77 /* QiSafeTypeViewController.m */; };
+		EE1C85C322202F1400FC2E77 /* QiSafeTypeHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1C85C222202F1400FC2E77 /* QiSafeTypeHandleViewController.m */; };
+		EE1CF48722257A83002D11A3 /* NSArray+QiSafeType.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1CF48622257A83002D11A3 /* NSArray+QiSafeType.m */; };
+		EE1FA97622242D4C00E1B928 /* NSDictionary+QiSafeType.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1FA97522242D4C00E1B928 /* NSDictionary+QiSafeType.m */; };
+		EEA0EC1A2224021600B974B1 /* QiSubDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA0EC192224021600B974B1 /* QiSubDictionary.m */; };
 		EED2D5A6221BE83200396C42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EED2D5A5221BE83200396C42 /* AppDelegate.m */; };
 		EED2D5AC221BE83200396C42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED2D5AA221BE83200396C42 /* Main.storyboard */; };
 		EED2D5AE221BE83300396C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED2D5AD221BE83300396C42 /* Assets.xcassets */; };
@@ -26,6 +32,18 @@
 		EE1812D1221D713500319E9C /* QiMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiMessage.h; sourceTree = "<group>"; };
 		EE1812D2221D713500319E9C /* QiMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiMessage.m; sourceTree = "<group>"; };
 		EE1812DB221E244D00319E9C /* NSNull+QiNullSafe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNull+QiNullSafe.m"; sourceTree = "<group>"; };
+		EE1C5BB422227E4500CEC8C4 /* QiSubArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiSubArray.h; sourceTree = "<group>"; };
+		EE1C5BB522227E4500CEC8C4 /* QiSubArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiSubArray.m; sourceTree = "<group>"; };
+		EE1C85BE22202D4D00FC2E77 /* QiSafeTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiSafeTypeViewController.h; sourceTree = "<group>"; };
+		EE1C85BF22202D4D00FC2E77 /* QiSafeTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiSafeTypeViewController.m; sourceTree = "<group>"; };
+		EE1C85C122202F1400FC2E77 /* QiSafeTypeHandleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiSafeTypeHandleViewController.h; sourceTree = "<group>"; };
+		EE1C85C222202F1400FC2E77 /* QiSafeTypeHandleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiSafeTypeHandleViewController.m; sourceTree = "<group>"; };
+		EE1CF48522257A83002D11A3 /* NSArray+QiSafeType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+QiSafeType.h"; sourceTree = "<group>"; };
+		EE1CF48622257A83002D11A3 /* NSArray+QiSafeType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+QiSafeType.m"; sourceTree = "<group>"; };
+		EE1FA97422242D4C00E1B928 /* NSDictionary+QiSafeType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+QiSafeType.h"; sourceTree = "<group>"; };
+		EE1FA97522242D4C00E1B928 /* NSDictionary+QiSafeType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QiSafeType.m"; sourceTree = "<group>"; };
+		EEA0EC182224021600B974B1 /* QiSubDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiSubDictionary.h; sourceTree = "<group>"; };
+		EEA0EC192224021600B974B1 /* QiSubDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiSubDictionary.m; sourceTree = "<group>"; };
 		EED2D5A1221BE83200396C42 /* QiSafeType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiSafeType.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED2D5A4221BE83200396C42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EED2D5A5221BE83200396C42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,6 +89,10 @@
 		EED2D5A3221BE83200396C42 /* QiSafeType */ = {
 			isa = PBXGroup;
 			children = (
+				EE1C85BE22202D4D00FC2E77 /* QiSafeTypeViewController.h */,
+				EE1C85BF22202D4D00FC2E77 /* QiSafeTypeViewController.m */,
+				EE1C85C122202F1400FC2E77 /* QiSafeTypeHandleViewController.h */,
+				EE1C85C222202F1400FC2E77 /* QiSafeTypeHandleViewController.m */,
 				EE1812CE221D70C900319E9C /* QiMessageForwardViewController.h */,
 				EE1812CF221D70C900319E9C /* QiMessageForwardViewController.m */,
 				EE1812D1221D713500319E9C /* QiMessage.h */,
@@ -81,6 +103,10 @@
 				EED2D5BD221BE8B100396C42 /* QiAvoidCommonCrash */,
 				EED2D5BC221BE8B100396C42 /* Person.h */,
 				EED2D5BA221BE8B100396C42 /* Person.m */,
+				EE1C5BB422227E4500CEC8C4 /* QiSubArray.h */,
+				EE1C5BB522227E4500CEC8C4 /* QiSubArray.m */,
+				EEA0EC182224021600B974B1 /* QiSubDictionary.h */,
+				EEA0EC192224021600B974B1 /* QiSubDictionary.m */,
 				EED2D5AA221BE83200396C42 /* Main.storyboard */,
 				EED2D5AD221BE83300396C42 /* Assets.xcassets */,
 				EED2D5AF221BE83300396C42 /* LaunchScreen.storyboard */,
@@ -95,6 +121,10 @@
 			children = (
 				EED2D5BE221BE8B100396C42 /* NSObject+QiAvoidCommonCrash.h */,
 				EED2D5BF221BE8B100396C42 /* NSObject+QiAvoidCommonCrash.m */,
+				EE1CF48522257A83002D11A3 /* NSArray+QiSafeType.h */,
+				EE1CF48622257A83002D11A3 /* NSArray+QiSafeType.m */,
+				EE1FA97422242D4C00E1B928 /* NSDictionary+QiSafeType.h */,
+				EE1FA97522242D4C00E1B928 /* NSDictionary+QiSafeType.m */,
 			);
 			path = QiAvoidCommonCrash;
 			sourceTree = "<group>";
@@ -181,10 +211,16 @@
 				EE1812D3221D713500319E9C /* QiMessage.m in Sources */,
 				EED2D5C7221BE8B200396C42 /* NSObject+QiAvoidCommonCrash.m in Sources */,
 				EED2D5B4221BE83300396C42 /* main.m in Sources */,
+				EE1CF48722257A83002D11A3 /* NSArray+QiSafeType.m in Sources */,
 				EED2D5C5221BE8B200396C42 /* Person.m in Sources */,
+				EEA0EC1A2224021600B974B1 /* QiSubDictionary.m in Sources */,
 				EE1812DC221E244D00319E9C /* NSNull+QiNullSafe.m in Sources */,
 				EE1812D0221D70C900319E9C /* QiMessageForwardViewController.m in Sources */,
+				EE1C85C322202F1400FC2E77 /* QiSafeTypeHandleViewController.m in Sources */,
+				EE1FA97622242D4C00E1B928 /* NSDictionary+QiSafeType.m in Sources */,
+				EE1C5BB622227E4500CEC8C4 /* QiSubArray.m in Sources */,
 				EED2D5C8221BE8B200396C42 /* NullSafe.m in Sources */,
+				EE1C85C022202D4D00FC2E77 /* QiSafeTypeViewController.m in Sources */,
 				EED2D5A6221BE83200396C42 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

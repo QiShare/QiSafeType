@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSObject (QiAvoidCommonCrash)
 
 - (NSInteger)qi_safeIntegerValue;
+- (id)qi_safeArrayObjectAtIndex:(NSUInteger)index;
+- (void)qi_safeMutableArrayAddObject:(id)obj;
+- (id)qi_safeDictionaryValueForkey:(NSString *)key;
 
 @end
 
@@ -23,7 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSString (QiAvoidCommonCrash)
 
 + (NSString *)qi_safeNilStringSourceString:(NSString *)sourceStr DestinationDefaultString:(NSString *)destinationDefaultStr;
-- (NSString *)qi_safeNilStringDestinationDefaultString:(NSString *)destinationDefaultStr;
 + (NSString *)qi_safeFormat:(NSString *)format;
 
 @end

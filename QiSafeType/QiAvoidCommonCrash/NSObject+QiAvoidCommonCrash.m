@@ -9,10 +9,10 @@
 
 //! 服务端返回数值类型有误
 static NSInteger const kCustomErrorCode = 1000;
+
 #if DEBUG
 
 @implementation NSObject (QiAvoidCommonCrash)
-
 
 
 - (NSInteger)qi_safeIntegerValue {
@@ -24,6 +24,42 @@ static NSInteger const kCustomErrorCode = 1000;
     } else {
         return kCustomErrorCode;
     }
+}
+
+- (id)qi_safeArrayObjectAtIndex:(NSUInteger)index {
+    
+    if (![self isKindOfClass:[NSArray class]]) {
+        return nil;
+    }
+    
+    if (index < 0 || index >= ((NSArray *)self).count) {
+        return nil;
+    }
+    
+    return [(NSArray *)self objectAtIndex:index];
+}
+
+- (void)qi_safeMutableArrayAddObject:(id)obj {
+    
+    if (!obj) {
+        return;
+    }
+    if (![self isKindOfClass:[NSMutableArray class]]) {
+        return;
+    }
+    [(NSMutableArray *)self addObject:obj];
+}
+
+- (id)qi_safeDictionaryValueForkey:(NSString *)key {
+    
+    if (![self isKindOfClass:[NSDictionary class]]) {
+        return nil;
+    }
+    
+    if (![key isKindOfClass:[NSString class]]) {
+        return nil;
+    }
+    return [(NSDictionary *)self valueForKey:key];
 }
 
 @end
@@ -45,24 +81,7 @@ static NSInteger const kCustomErrorCode = 1000;
             return sourceStr;
         }
     }
-    return nil;
-}
-
-- (NSString *)qi_safeNilStringDestinationDefaultString:(NSString *)destinationDefaultStr {
-    
-    if (!self) {
-        return destinationDefaultStr;
-    }
-    if ([self isKindOfClass:[NSString class]]) {
-        if (self.length == 0) {
-            if (destinationDefaultStr) {
-                return destinationDefaultStr;
-            }
-        } else {
-            return self;
-        }
-    }
-    return nil;
+    return @"";
 }
 
 + (NSString *)qi_safeFormat:(NSString *)format {
@@ -82,10 +101,6 @@ static NSInteger const kCustomErrorCode = 1000;
 @implementation NSArray (QiAvoidCommonCrash)
 
 - (id)qi_safeObjectAtIndex:(NSUInteger)index {
-    
-    if (![self isKindOfClass:[NSArray class]]) {
-        return nil;
-    }
     
     if (index < 0) {
         return nil;
@@ -108,9 +123,6 @@ static NSInteger const kCustomErrorCode = 1000;
     if (!obj) {
         return;
     }
-    if ([obj isKindOfClass:[NSNull class]]) {
-        return;
-    }
     [self addObject:obj];
 }
 
@@ -120,10 +132,6 @@ static NSInteger const kCustomErrorCode = 1000;
 @implementation NSDictionary (QiAvoidCommonCrash)
 
 - (id)qi_safeValueForkey:(NSString *)key {
-    
-    if (![self isKindOfClass:[NSDictionary class]]) {
-        return nil;
-    }
     
     if (![key isKindOfClass:[NSString class]]) {
         return nil;

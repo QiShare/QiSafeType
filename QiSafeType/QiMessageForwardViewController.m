@@ -15,6 +15,7 @@
     [super viewDidLoad];
     
     self.title = @"消息转发";
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *forwardMessageButton = [[UIButton alloc] initWithFrame:CGRectMake(.0, .0, CGRectGetWidth(self.view.frame), 40.0)];
     forwardMessageButton.backgroundColor = [UIColor blueColor];
