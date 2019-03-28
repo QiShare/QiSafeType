@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE1414FE22376E0B00EC8A60 /* QiSafeKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1414FD22376E0B00EC8A60 /* QiSafeKVOViewController.m */; };
+		EE14150622377D0700EC8A60 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE14150122377D0700EC8A60 /* FBKVOController.m */; };
+		EE14150822377D0700EC8A60 /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE14150522377D0700EC8A60 /* NSObject+FBKVOController.m */; };
 		EE1812D0221D70C900319E9C /* QiMessageForwardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1812CF221D70C900319E9C /* QiMessageForwardViewController.m */; };
 		EE1812D3221D713500319E9C /* QiMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1812D2221D713500319E9C /* QiMessage.m */; };
 		EE1812DC221E244D00319E9C /* NSNull+QiNullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1812DB221E244D00319E9C /* NSNull+QiNullSafe.m */; };
@@ -27,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE1414FC22376E0B00EC8A60 /* QiSafeKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiSafeKVOViewController.h; sourceTree = "<group>"; };
+		EE1414FD22376E0B00EC8A60 /* QiSafeKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiSafeKVOViewController.m; sourceTree = "<group>"; };
+		EE14150022377D0700EC8A60 /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
+		EE14150122377D0700EC8A60 /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
+		EE14150322377D0700EC8A60 /* KVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOController.h; sourceTree = "<group>"; };
+		EE14150422377D0700EC8A60 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FBKVOController.h"; sourceTree = "<group>"; };
+		EE14150522377D0700EC8A60 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FBKVOController.m"; sourceTree = "<group>"; };
 		EE1812CE221D70C900319E9C /* QiMessageForwardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiMessageForwardViewController.h; sourceTree = "<group>"; };
 		EE1812CF221D70C900319E9C /* QiMessageForwardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QiMessageForwardViewController.m; sourceTree = "<group>"; };
 		EE1812D1221D713500319E9C /* QiMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiMessage.h; sourceTree = "<group>"; };
@@ -70,6 +80,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE1414FB22376DF000EC8A60 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				EE1414FF22377D0700EC8A60 /* FBKVOController */,
+				EE1414FC22376E0B00EC8A60 /* QiSafeKVOViewController.h */,
+				EE1414FD22376E0B00EC8A60 /* QiSafeKVOViewController.m */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		EE1414FF22377D0700EC8A60 /* FBKVOController */ = {
+			isa = PBXGroup;
+			children = (
+				EE14150022377D0700EC8A60 /* FBKVOController.h */,
+				EE14150122377D0700EC8A60 /* FBKVOController.m */,
+				EE14150322377D0700EC8A60 /* KVOController.h */,
+				EE14150422377D0700EC8A60 /* NSObject+FBKVOController.h */,
+				EE14150522377D0700EC8A60 /* NSObject+FBKVOController.m */,
+			);
+			path = FBKVOController;
+			sourceTree = "<group>";
+		};
 		EED2D598221BE83200396C42 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +121,7 @@
 		EED2D5A3221BE83200396C42 /* QiSafeType */ = {
 			isa = PBXGroup;
 			children = (
+				EE1414FB22376DF000EC8A60 /* KVO */,
 				EE1C85BE22202D4D00FC2E77 /* QiSafeTypeViewController.h */,
 				EE1C85BF22202D4D00FC2E77 /* QiSafeTypeViewController.m */,
 				EE1C85C122202F1400FC2E77 /* QiSafeTypeHandleViewController.h */,
@@ -209,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1812D3221D713500319E9C /* QiMessage.m in Sources */,
+				EE14150822377D0700EC8A60 /* NSObject+FBKVOController.m in Sources */,
 				EED2D5C7221BE8B200396C42 /* NSObject+QiAvoidCommonCrash.m in Sources */,
 				EED2D5B4221BE83300396C42 /* main.m in Sources */,
 				EE1CF48722257A83002D11A3 /* NSArray+QiSafeType.m in Sources */,
@@ -216,8 +250,10 @@
 				EEA0EC1A2224021600B974B1 /* QiSubDictionary.m in Sources */,
 				EE1812DC221E244D00319E9C /* NSNull+QiNullSafe.m in Sources */,
 				EE1812D0221D70C900319E9C /* QiMessageForwardViewController.m in Sources */,
+				EE14150622377D0700EC8A60 /* FBKVOController.m in Sources */,
 				EE1C85C322202F1400FC2E77 /* QiSafeTypeHandleViewController.m in Sources */,
 				EE1FA97622242D4C00E1B928 /* NSDictionary+QiSafeType.m in Sources */,
+				EE1414FE22376E0B00EC8A60 /* QiSafeKVOViewController.m in Sources */,
 				EE1C5BB622227E4500CEC8C4 /* QiSubArray.m in Sources */,
 				EED2D5C8221BE8B200396C42 /* NullSafe.m in Sources */,
 				EE1C85C022202D4D00FC2E77 /* QiSafeTypeViewController.m in Sources */,
@@ -364,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8ZX24TX624;
 				INFOPLIST_FILE = QiSafeType/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

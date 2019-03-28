@@ -9,6 +9,7 @@
 #import "QiSafeTypeViewController.h"
 #import "QiMessageForwardViewController.h"
 #import "QiSafeTypeHandleViewController.h"
+#import "QiSafeKVOViewController.h"
 
 //#import "QiSubArray.h"
 #import "QiSubDictionary.h"
@@ -25,6 +26,7 @@
     [super viewDidLoad];
     
     [self setupUI];
+    [NSString stringWithFormat:@"%@", nil];
 }
 
 - (void)setupUI {
@@ -32,17 +34,23 @@
     self.title = @"QiSafeType";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIButton *messageForwardButton = [[UIButton alloc] initWithFrame:CGRectMake(.0, CGRectGetHeight(self.view.frame) * 0.3, CGRectGetWidth(self.view.frame), 40.0)];
+    UIButton *messageForwardButton = [[UIButton alloc] initWithFrame:CGRectMake(.0, CGRectGetHeight(self.view.frame) * 0.2, CGRectGetWidth(self.view.frame), 40.0)];
     [self.view addSubview:messageForwardButton];
     messageForwardButton.backgroundColor = [UIColor blueColor];
     [messageForwardButton setTitle:@"去消息转发界面" forState:UIControlStateNormal];
     [messageForwardButton addTarget:self action:@selector(messageForwardDetailButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *safeTypeButton = [[UIButton alloc] initWithFrame:CGRectMake(.0, CGRectGetHeight(self.view.frame) * 0.6, CGRectGetWidth(self.view.frame), 40.0)];
+    UIButton *safeTypeButton = [[UIButton alloc] initWithFrame:CGRectMake(.0, CGRectGetHeight(self.view.frame) * 0.4, CGRectGetWidth(self.view.frame), 40.0)];
     [self.view addSubview:safeTypeButton];
     safeTypeButton.backgroundColor = [UIColor blueColor];
     [safeTypeButton setTitle:@"去安全类型处理页面" forState:UIControlStateNormal];
     [safeTypeButton addTarget:self action:@selector(qiSafeTypeHandleButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *kvoButton = [[UIButton alloc] initWithFrame:CGRectMake(.0, CGRectGetHeight(self.view.frame) * 0.6, CGRectGetWidth(self.view.frame), 40.0)];
+    [self.view addSubview:kvoButton];
+    kvoButton.backgroundColor = [UIColor blueColor];
+    [kvoButton setTitle:@"避免KVO崩溃" forState:UIControlStateNormal];
+    [kvoButton addTarget:self action:@selector(qiSafeKVOButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)messageForwardDetailButtonClicked {
@@ -55,6 +63,12 @@
     
     QiSafeTypeHandleViewController *safeTypeHandleVC = [QiSafeTypeHandleViewController new];
     [self.navigationController pushViewController:safeTypeHandleVC animated:YES];
+}
+
+- (void)qiSafeKVOButtonClicked:(UIButton *)sender {
+    
+    QiSafeKVOViewController *kvoVC = [QiSafeKVOViewController new];
+    [self.navigationController pushViewController:kvoVC animated:YES];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

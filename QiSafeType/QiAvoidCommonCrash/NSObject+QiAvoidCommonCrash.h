@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (id)qi_safeArrayObjectAtIndex:(NSUInteger)index;
 - (void)qi_safeMutableArrayAddObject:(id)obj;
 - (id)qi_safeDictionaryValueForkey:(NSString *)key;
+- (void)qi_safeAddObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context;
+- (void)qi_safeRemoveObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath;
 
 @end
 
@@ -49,6 +51,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSMutableArray (QiAvoidCommonCrash)
 
 - (void)qi_safeAddObject:(id)obj;
+- (void)qi_safeAddObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context;
+- (void)qi_safeRemoveObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath;
 
 @end
 

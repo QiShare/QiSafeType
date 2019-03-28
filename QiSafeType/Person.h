@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Person : NSObject
 
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *address;
+
++ (instancetype)sharedInstance;
 
 @end
 

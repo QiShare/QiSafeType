@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draft Stage</title>
+    <script id="data">
+        DrafterData = [
+  {
+    "accessControl" : "public",
+    "type" : "class",
+    "protocols" : [
+
+    ],
+    "id" : "D2E4831D267719CDD0962ABCCE964B3BA",
+    "methods" : {
+      "D76423D778E3BEB95DF4217E5E68D3E23" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "debugDescription"
+          }
+        ],
+        "type" : "method",
+        "id" : "D76423D778E3BEB95DF4217E5E68D3E23",
+        "returnType" : "NSString *",
+        "invokes" : [
+          {
+            "formatedName" : "[NSMutableString stringWithFormat:]"
+          },
+          {
+            "formatedName" : "[self class]"
+          },
+          {
+            "formatedName" : "[NSMutableArray arrayWithCapacity:]"
+          },
+          {
+            "formatedName" : "[infoDescriptions addObject:]"
+          },
+          {
+            "formatedName" : "[s appendFormat: contexts:]"
+          }
+        ],
+        "classId" : "D2E4831D267719CDD0962ABCCE964B3BA",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D736B7A8AAAD3D47654C0FF42DD62270B" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "sharedController"
+          }
+        ],
+        "type" : "method",
+        "id" : "D736B7A8AAAD3D47654C0FF42DD62270B",
+        "returnType" : "instancetype",
+        "invokes" : [
+          {
+            "methodId" : "DA3267F4DF7161900B0E71AC6F9C9755B",
+            "classId" : "D2E4831D267719CDD0962ABCCE964B3BA"
+          }
+        ],
+        "classId" : "D2E4831D267719CDD0962ABCCE964B3BA",
+        "static" : true,
+        "isSwift" : false
+      },
+      "D23B432A132DD709E22340A7C8625C4FD" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "id",
+            "sel" : "observe"
+          },
+          {
+            "name" : "info",
+            "type" : "nullable _FBKVOInfo *",
+            "sel" : "info"
+          }
+        ],
+        "type" : "method",
+        "id" : "D23B432A132DD709E22340A7C8625C4FD",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[_infos addObject:]"
+          },
+          {
+            "formatedName" : "[object addObserver: forKeyPath: options: context:]"
+          },
+          {
+            "formatedName" : "[object removeObserver: forKeyPath: context:]"
+          }
+        ],
+        "classId" : "D2E4831D267719CDD0962ABCCE964B3BA",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DA3267F4DF7161900B0E71AC6F9C9755B" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "init"
+          }
+        ],
+        "type" : "method",
+        "id" : "DA3267F4DF7161900B0E71AC6F9C9755B",
+        "returnType" : "instancetype",
+        "invokes" : [
+          {
+            "methodId" : "DA3267F4DF7161900B0E71AC6F9C9755B",
+            "classId" : "D2E4831D267719CDD0962ABCCE964B3BA"
+          },
+          {
+            "formatedName" : "[NSHashTable alloc]"
+          },
+          {
+            "formatedName" : "[infos initWithOptions: capacity:]"
+          },
+          {
+            "formatedName" : "[NSHashTable respondsToSelector:]"
+          }
+        ],
+        "classId" : "D2E4831D267719CDD0962ABCCE964B3BA",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D7C6C06D8577A00B5DE68D4F73D04B8C5" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "dealloc"
+          }
+        ],
+        "type" : "method",
+        "id" : "D7C6C06D8577A00B5DE68D4F73D04B8C5",
+        "returnType" : "void",
+        "invokes" : [
+
+        ],
+        "classId" : "D2E4831D267719CDD0962ABCCE964B3BA",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D0901F70E81554034E316727C8397C0EF" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "keyPath",
+            "type" : "nullable NSString *",
+            "sel" : "observeValueForKeyPath"
+          },
+          {
+            "name" : "object",
+            "type" : "nullable id",
+            "sel" : "ofObject"
+          },
+          {
+            "name" : "change",
+            "type" : "nullable NSDictionary < NSKeyValueChangeKey , id > *",
+            "sel" : "change"
+          },
+          {
+            "name" : "context",
+            "type" : "nullable void *",
+            "sel" : "context"
+          }
+        ],
+        "type" : "method",
+        "id" : "D0901F70E81554034E316727C8397C0EF",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[_infos member:]"
+          },
+          {
+            "formatedName" : "[NSMutableDictionary dictionaryWithObject: forKey:]"
+          },
+          {
+            "formatedName" : "[mChange addEntriesFromDictionary:]"
+          },
+          {
+            "formatedName" : "[mChange copy]"
+          },
+          {
+            "formatedName" : "[observer performSelector: withObject: withObject:]"
+          },
+          {
+            "methodId" : "D0901F70E81554034E316727C8397C0EF",
+            "classId" : "D2E4831D267719CDD0962ABCCE964B3BA"
+          }
+        ],
+        "classId" : "D2E4831D267719CDD0962ABCCE964B3BA",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DB443EFD8901DAE65FCAFC9D9A952FC1E" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "id",
+            "sel" : "unobserve"
+          },
+          {
+            "name" : "infos",
+            "type" : "nullable NSSet < _FBKVOInfo * > *",
+            "sel" : "infos"
+          }
+        ],
+        "type" : "method",
+        "id" : "DB443EFD8901DAE65FCAFC9D9A952FC1E",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[_infos removeObject:]"
+          },
+          {
+            "formatedName" : "[object removeObserver: forKeyPath: context:]"
+          }
+        ],
+        "classId" : "D2E4831D267719CDD0962ABCCE964B3BA",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D129138784ADCC5F9A170E50F35569A74" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "id",
+            "sel" : "unobserve"
+          },
+          {
+            "name" : "info",
+            "type" : "nullable _FBKVOInfo *",
+            "sel" : "info"
+          }
+        ],
+        "type" : "method",
+        "id" : "D129138784ADCC5F9A170E50F35569A74",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[_infos removeObject:]"
+          },
+          {
+            "formatedName" : "[object removeObserver: forKeyPath: context:]"
+          }
+        ],
+        "classId" : "D2E4831D267719CDD0962ABCCE964B3BA",
+        "static" : false,
+        "isSwift" : false
+      }
+    },
+    "super" : "NSObject",
+    "name" : "_FBKVOSharedController",
+    "isSwift" : false
+  },
+  {
+    "accessControl" : "public",
+    "type" : "class",
+    "protocols" : [
+
+    ],
+    "id" : "D0E5DE971E263F8A2074D25E8D4B76928",
+    "methods" : {
+      "D88D88F96AE1FE912A02D17ACD7662413" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "id",
+            "sel" : "_unobserve"
+          }
+        ],
+        "type" : "method",
+        "id" : "D88D88F96AE1FE912A02D17ACD7662413",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[_objectInfosMap objectForKey:]"
+          },
+          {
+            "formatedName" : "[_objectInfosMap removeObjectForKey:]"
+          },
+          {
+            "formatedName" : "[[_FBKVOSharedController sharedController] unobserve: infos:]"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DD06869F71475382FBDF3A86B40612BA2" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "_unobserveAll"
+          }
+        ],
+        "type" : "method",
+        "id" : "DD06869F71475382FBDF3A86B40612BA2",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[_objectInfosMap copy]"
+          },
+          {
+            "formatedName" : "[_objectInfosMap removeAllObjects]"
+          },
+          {
+            "formatedName" : "[_FBKVOSharedController sharedController]"
+          },
+          {
+            "formatedName" : "[objectInfoMaps objectForKey:]"
+          },
+          {
+            "formatedName" : "[shareController unobserve: infos:]"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D2ED2B88AA5162F1CBCD5C128A8AE727C" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "nullable id",
+            "sel" : "observe"
+          },
+          {
+            "name" : "keyPaths",
+            "type" : "NSArray < NSString * > *",
+            "sel" : "keyPaths"
+          },
+          {
+            "name" : "options",
+            "type" : "NSKeyValueObservingOptions",
+            "sel" : "options"
+          },
+          {
+            "name" : "context",
+            "type" : "nullable void *",
+            "sel" : "context"
+          }
+        ],
+        "type" : "method",
+        "id" : "D2ED2B88AA5162F1CBCD5C128A8AE727C",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "methodId" : "DC481FABDAB362123F34A1E4AA1CFD63D",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D571D4281627A876B00D6D40B8AD2D5B4" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "nullable id",
+            "sel" : "unobserve"
+          }
+        ],
+        "type" : "method",
+        "id" : "D571D4281627A876B00D6D40B8AD2D5B4",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "methodId" : "D88D88F96AE1FE912A02D17ACD7662413",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D629C1BBEC2447C338C3C9629F8C81E25" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "nullable id",
+            "sel" : "observe"
+          },
+          {
+            "name" : "keyPaths",
+            "type" : "NSArray < NSString * > *",
+            "sel" : "keyPaths"
+          },
+          {
+            "name" : "options",
+            "type" : "NSKeyValueObservingOptions",
+            "sel" : "options"
+          },
+          {
+            "name" : "action",
+            "type" : "SEL",
+            "sel" : "action"
+          }
+        ],
+        "type" : "method",
+        "id" : "D629C1BBEC2447C338C3C9629F8C81E25",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[_observer respondsToSelector:]"
+          },
+          {
+            "methodId" : "D1E399164EF006A001F9B2D75788B0C5C",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D8E848843FCC2646B5A3C23C0C30F1A9C" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "dealloc"
+          }
+        ],
+        "type" : "method",
+        "id" : "D8E848843FCC2646B5A3C23C0C30F1A9C",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "methodId" : "D1007E9B068E406407F5767B4A73D870B",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DC481FABDAB362123F34A1E4AA1CFD63D" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "nullable id",
+            "sel" : "observe"
+          },
+          {
+            "name" : "keyPath",
+            "type" : "NSString *",
+            "sel" : "keyPath"
+          },
+          {
+            "name" : "options",
+            "type" : "NSKeyValueObservingOptions",
+            "sel" : "options"
+          },
+          {
+            "name" : "context",
+            "type" : "nullable void *",
+            "sel" : "context"
+          }
+        ],
+        "type" : "method",
+        "id" : "DC481FABDAB362123F34A1E4AA1CFD63D",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[[_FBKVOInfo alloc] initWithController: keyPath: options: context:]"
+          },
+          {
+            "methodId" : "D8AEB86E60FC7BBDCB19C0640CC525C6B",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D1E399164EF006A001F9B2D75788B0C5C" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "nullable id",
+            "sel" : "observe"
+          },
+          {
+            "name" : "keyPath",
+            "type" : "NSString *",
+            "sel" : "keyPath"
+          },
+          {
+            "name" : "options",
+            "type" : "NSKeyValueObservingOptions",
+            "sel" : "options"
+          },
+          {
+            "name" : "action",
+            "type" : "SEL",
+            "sel" : "action"
+          }
+        ],
+        "type" : "method",
+        "id" : "D1E399164EF006A001F9B2D75788B0C5C",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[_observer respondsToSelector:]"
+          },
+          {
+            "formatedName" : "[[_FBKVOInfo alloc] initWithController: keyPath: options: action:]"
+          },
+          {
+            "methodId" : "D8AEB86E60FC7BBDCB19C0640CC525C6B",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D8AEB86E60FC7BBDCB19C0640CC525C6B" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "id",
+            "sel" : "_observe"
+          },
+          {
+            "name" : "info",
+            "type" : "_FBKVOInfo *",
+            "sel" : "info"
+          }
+        ],
+        "type" : "method",
+        "id" : "D8AEB86E60FC7BBDCB19C0640CC525C6B",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[_objectInfosMap objectForKey:]"
+          },
+          {
+            "formatedName" : "[infos member:]"
+          },
+          {
+            "formatedName" : "[NSMutableSet set]"
+          },
+          {
+            "formatedName" : "[_objectInfosMap setObject: forKey:]"
+          },
+          {
+            "formatedName" : "[infos addObject:]"
+          },
+          {
+            "formatedName" : "[[_FBKVOSharedController sharedController] observe: info:]"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D7B48BDD09F8C158A683158BDDAC4C565" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "observer",
+            "type" : "nullable id",
+            "sel" : "initWithObserver"
+          }
+        ],
+        "type" : "method",
+        "id" : "D7B48BDD09F8C158A683158BDDAC4C565",
+        "returnType" : "instancetype",
+        "invokes" : [
+          {
+            "methodId" : "DC341E35B6F2403BF563CE797969DE4CB",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DC341E35B6F2403BF563CE797969DE4CB" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "observer",
+            "type" : "nullable id",
+            "sel" : "initWithObserver"
+          },
+          {
+            "name" : "retainObserved",
+            "type" : "BOOL",
+            "sel" : "retainObserved"
+          }
+        ],
+        "type" : "method",
+        "id" : "DC341E35B6F2403BF563CE797969DE4CB",
+        "returnType" : "instancetype",
+        "invokes" : [
+          {
+            "formatedName" : "[super init]"
+          },
+          {
+            "formatedName" : "[[NSMapTable alloc] initWithKeyOptions: valueOptions: capacity:]"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D1007E9B068E406407F5767B4A73D870B" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "unobserveAll"
+          }
+        ],
+        "type" : "method",
+        "id" : "D1007E9B068E406407F5767B4A73D870B",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "methodId" : "DD06869F71475382FBDF3A86B40612BA2",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D87C7F42E6B8185915A50EEF7C39BC1A5" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "observer",
+            "type" : "nullable id",
+            "sel" : "controllerWithObserver"
+          }
+        ],
+        "type" : "method",
+        "id" : "D87C7F42E6B8185915A50EEF7C39BC1A5",
+        "returnType" : "instancetype",
+        "invokes" : [
+          {
+            "methodId" : "D7B48BDD09F8C158A683158BDDAC4C565",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : true,
+        "isSwift" : false
+      },
+      "DB76F0B6A22E54539429472CDC82FCBDD" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "nullable id",
+            "sel" : "observe"
+          },
+          {
+            "name" : "keyPath",
+            "type" : "NSString *",
+            "sel" : "keyPath"
+          },
+          {
+            "name" : "options",
+            "type" : "NSKeyValueObservingOptions",
+            "sel" : "options"
+          },
+          {
+            "name" : "block",
+            "type" : "FBKVONotificationBlock",
+            "sel" : "block"
+          }
+        ],
+        "type" : "method",
+        "id" : "DB76F0B6A22E54539429472CDC82FCBDD",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[[_FBKVOInfo alloc] initWithController: keyPath: options: block:]"
+          },
+          {
+            "methodId" : "D8AEB86E60FC7BBDCB19C0640CC525C6B",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DBD74337A3260645325BDEF0D71BC62BC" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "debugDescription"
+          }
+        ],
+        "type" : "method",
+        "id" : "DBD74337A3260645325BDEF0D71BC62BC",
+        "returnType" : "NSString *",
+        "invokes" : [
+          {
+            "formatedName" : "[NSMutableString stringWithFormat:]"
+          },
+          {
+            "formatedName" : "[self class]"
+          },
+          {
+            "formatedName" : "[s appendFormat: observer:]"
+          },
+          {
+            "formatedName" : "[s appendString:]"
+          },
+          {
+            "formatedName" : "[_objectInfosMap objectForKey:]"
+          },
+          {
+            "formatedName" : "[NSMutableArray arrayWithCapacity:]"
+          },
+          {
+            "formatedName" : "[infos enumerateObjectsUsingBlock:]"
+          },
+          {
+            "formatedName" : "[s appendFormat:]"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D8C0768201EAD4429CF4350C780E4B321" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "id",
+            "sel" : "_unobserve"
+          },
+          {
+            "name" : "info",
+            "type" : "_FBKVOInfo *",
+            "sel" : "info"
+          }
+        ],
+        "type" : "method",
+        "id" : "D8C0768201EAD4429CF4350C780E4B321",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[_objectInfosMap objectForKey:]"
+          },
+          {
+            "formatedName" : "[infos member:]"
+          },
+          {
+            "formatedName" : "[infos removeObject:]"
+          },
+          {
+            "formatedName" : "[_objectInfosMap removeObjectForKey:]"
+          },
+          {
+            "formatedName" : "[[_FBKVOSharedController sharedController] unobserve: info:]"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D5893E3CC9070E935759B8B6806358604" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "nullable id",
+            "sel" : "observe"
+          },
+          {
+            "name" : "keyPaths",
+            "type" : "NSArray < NSString * > *",
+            "sel" : "keyPaths"
+          },
+          {
+            "name" : "options",
+            "type" : "NSKeyValueObservingOptions",
+            "sel" : "options"
+          },
+          {
+            "name" : "block",
+            "type" : "FBKVONotificationBlock",
+            "sel" : "block"
+          }
+        ],
+        "type" : "method",
+        "id" : "D5893E3CC9070E935759B8B6806358604",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "methodId" : "DB76F0B6A22E54539429472CDC82FCBDD",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D2AB93160C49C5CA543D9CF432ACE6000" : {
+        "accessControl" : "public",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "nullable id",
+            "sel" : "unobserve"
+          },
+          {
+            "name" : "keyPath",
+            "type" : "NSString *",
+            "sel" : "keyPath"
+          }
+        ],
+        "type" : "method",
+        "id" : "D2AB93160C49C5CA543D9CF432ACE6000",
+        "returnType" : "void",
+        "invokes" : [
+          {
+            "formatedName" : "[[_FBKVOInfo alloc] initWithController: keyPath:]"
+          },
+          {
+            "methodId" : "D8C0768201EAD4429CF4350C780E4B321",
+            "classId" : "D0E5DE971E263F8A2074D25E8D4B76928"
+          }
+        ],
+        "classId" : "D0E5DE971E263F8A2074D25E8D4B76928",
+        "static" : false,
+        "isSwift" : false
+      }
+    },
+    "super" : "NSObject",
+    "name" : "FBKVOController",
+    "isSwift" : false
+  },
+  {
+    "accessControl" : "public",
+    "type" : "class",
+    "protocols" : [
+
+    ],
+    "id" : "D0EC003FA5E567BC4886AEF38252127A7",
+    "methods" : {
+      "D274CC686B57626FF09190D8C1D62D6EB" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "controller",
+            "type" : "FBKVOController *",
+            "sel" : "initWithController"
+          },
+          {
+            "name" : "keyPath",
+            "type" : "NSString *",
+            "sel" : "keyPath"
+          }
+        ],
+        "type" : "method",
+        "id" : "D274CC686B57626FF09190D8C1D62D6EB",
+        "returnType" : "instancetype",
+        "invokes" : [
+          {
+            "methodId" : "D62E9726183DC787D93793C126FF529B2",
+            "classId" : "D0EC003FA5E567BC4886AEF38252127A7"
+          }
+        ],
+        "classId" : "D0EC003FA5E567BC4886AEF38252127A7",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DC8696403D5F4A79CE36F59883C1A49BB" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "controller",
+            "type" : "FBKVOController *",
+            "sel" : "initWithController"
+          },
+          {
+            "name" : "keyPath",
+            "type" : "NSString *",
+            "sel" : "keyPath"
+          },
+          {
+            "name" : "options",
+            "type" : "NSKeyValueObservingOptions",
+            "sel" : "options"
+          },
+          {
+            "name" : "action",
+            "type" : "SEL",
+            "sel" : "action"
+          }
+        ],
+        "type" : "method",
+        "id" : "DC8696403D5F4A79CE36F59883C1A49BB",
+        "returnType" : "instancetype",
+        "invokes" : [
+          {
+            "methodId" : "D62E9726183DC787D93793C126FF529B2",
+            "classId" : "D0EC003FA5E567BC4886AEF38252127A7"
+          }
+        ],
+        "classId" : "D0EC003FA5E567BC4886AEF38252127A7",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D5D534580BA7C20AA8123CF0B621D1F9A" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "controller",
+            "type" : "FBKVOController *",
+            "sel" : "initWithController"
+          },
+          {
+            "name" : "keyPath",
+            "type" : "NSString *",
+            "sel" : "keyPath"
+          },
+          {
+            "name" : "options",
+            "type" : "NSKeyValueObservingOptions",
+            "sel" : "options"
+          },
+          {
+            "name" : "block",
+            "type" : "FBKVONotificationBlock",
+            "sel" : "block"
+          }
+        ],
+        "type" : "method",
+        "id" : "D5D534580BA7C20AA8123CF0B621D1F9A",
+        "returnType" : "instancetype",
+        "invokes" : [
+          {
+            "methodId" : "D62E9726183DC787D93793C126FF529B2",
+            "classId" : "D0EC003FA5E567BC4886AEF38252127A7"
+          }
+        ],
+        "classId" : "D0EC003FA5E567BC4886AEF38252127A7",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DE66F7F00A772C07C521A6582C31B01DE" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "controller",
+            "type" : "FBKVOController *",
+            "sel" : "initWithController"
+          },
+          {
+            "name" : "keyPath",
+            "type" : "NSString *",
+            "sel" : "keyPath"
+          },
+          {
+            "name" : "options",
+            "type" : "NSKeyValueObservingOptions",
+            "sel" : "options"
+          },
+          {
+            "name" : "context",
+            "type" : "void *",
+            "sel" : "context"
+          }
+        ],
+        "type" : "method",
+        "id" : "DE66F7F00A772C07C521A6582C31B01DE",
+        "returnType" : "instancetype",
+        "invokes" : [
+          {
+            "methodId" : "D62E9726183DC787D93793C126FF529B2",
+            "classId" : "D0EC003FA5E567BC4886AEF38252127A7"
+          }
+        ],
+        "classId" : "D0EC003FA5E567BC4886AEF38252127A7",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D62E9726183DC787D93793C126FF529B2" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "controller",
+            "type" : "FBKVOController *",
+            "sel" : "initWithController"
+          },
+          {
+            "name" : "keyPath",
+            "type" : "NSString *",
+            "sel" : "keyPath"
+          },
+          {
+            "name" : "options",
+            "type" : "NSKeyValueObservingOptions",
+            "sel" : "options"
+          },
+          {
+            "name" : "block",
+            "type" : "nullable FBKVONotificationBlock",
+            "sel" : "block"
+          },
+          {
+            "name" : "action",
+            "type" : "nullable SEL",
+            "sel" : "action"
+          },
+          {
+            "name" : "context",
+            "type" : "nullable void *",
+            "sel" : "context"
+          }
+        ],
+        "type" : "method",
+        "id" : "D62E9726183DC787D93793C126FF529B2",
+        "returnType" : "instancetype",
+        "invokes" : [
+          {
+            "formatedName" : "[super init]"
+          },
+          {
+            "formatedName" : "[block copy]"
+          }
+        ],
+        "classId" : "D0EC003FA5E567BC4886AEF38252127A7",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DBA75A12B7FE1C5302D05D8874048026B" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "object",
+            "type" : "id",
+            "sel" : "isEqual"
+          }
+        ],
+        "type" : "method",
+        "id" : "DBA75A12B7FE1C5302D05D8874048026B",
+        "returnType" : "BOOL",
+        "invokes" : [
+          {
+            "formatedName" : "[object isKindOfClass:]"
+          },
+          {
+            "formatedName" : "[_keyPath isEqualToString:]"
+          },
+          {
+            "formatedName" : "[self class]"
+          }
+        ],
+        "classId" : "D0EC003FA5E567BC4886AEF38252127A7",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DFC6CD893DA160C80FA84994B156DC863" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "hash"
+          }
+        ],
+        "type" : "method",
+        "id" : "DFC6CD893DA160C80FA84994B156DC863",
+        "returnType" : "NSUInteger",
+        "invokes" : [
+          {
+            "methodId" : "DFC6CD893DA160C80FA84994B156DC863",
+            "classId" : "D0EC003FA5E567BC4886AEF38252127A7"
+          }
+        ],
+        "classId" : "D0EC003FA5E567BC4886AEF38252127A7",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DC52523AF9C8291E71571CA3D721134C7" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "debugDescription"
+          }
+        ],
+        "type" : "method",
+        "id" : "DC52523AF9C8291E71571CA3D721134C7",
+        "returnType" : "NSString *",
+        "invokes" : [
+          {
+            "formatedName" : "[NSMutableString stringWithFormat:]"
+          },
+          {
+            "formatedName" : "[self class]"
+          },
+          {
+            "formatedName" : "[s appendFormat: options:]"
+          },
+          {
+            "formatedName" : "[s appendFormat: action:]"
+          },
+          {
+            "formatedName" : "[s appendFormat: context:]"
+          },
+          {
+            "formatedName" : "[s appendFormat: block:]"
+          }
+        ],
+        "classId" : "D0EC003FA5E567BC4886AEF38252127A7",
+        "static" : false,
+        "isSwift" : false
+      }
+    },
+    "super" : "NSObject",
+    "name" : "_FBKVOInfo",
+    "isSwift" : false
+  },
+  {
+    "accessControl" : "public",
+    "type" : "class",
+    "protocols" : [
+
+    ],
+    "id" : "D6E429C20E93A3B6787649E4ACE495768",
+    "methods" : {
+      "DD2F0660A5B0F8AC11C557C2BBF2F03D8" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "KVOController",
+            "type" : "FBKVOController *",
+            "sel" : "setKVOController"
+          }
+        ],
+        "type" : "method",
+        "id" : "DD2F0660A5B0F8AC11C557C2BBF2F03D8",
+        "returnType" : "void",
+        "invokes" : [
+
+        ],
+        "classId" : "D6E429C20E93A3B6787649E4ACE495768",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DEB12FA05FBC07F7097E7D61C80EEF796" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "KVOController"
+          }
+        ],
+        "type" : "method",
+        "id" : "DEB12FA05FBC07F7097E7D61C80EEF796",
+        "returnType" : "FBKVOController *",
+        "invokes" : [
+          {
+            "formatedName" : "[FBKVOController controllerWithObserver:]"
+          }
+        ],
+        "classId" : "D6E429C20E93A3B6787649E4ACE495768",
+        "static" : false,
+        "isSwift" : false
+      },
+      "DAC3CA094E724566D64867F4A9C965BDA" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "",
+            "type" : "",
+            "sel" : "KVOControllerNonRetaining"
+          }
+        ],
+        "type" : "method",
+        "id" : "DAC3CA094E724566D64867F4A9C965BDA",
+        "returnType" : "FBKVOController *",
+        "invokes" : [
+          {
+            "formatedName" : "[[FBKVOController alloc] initWithObserver: retainObserved:]"
+          }
+        ],
+        "classId" : "D6E429C20E93A3B6787649E4ACE495768",
+        "static" : false,
+        "isSwift" : false
+      },
+      "D9DCAEC1FA401576DE04D0194D1C0CF54" : {
+        "accessControl" : "private",
+        "params" : [
+          {
+            "name" : "KVOControllerNonRetaining",
+            "type" : "FBKVOController *",
+            "sel" : "setKVOControllerNonRetaining"
+          }
+        ],
+        "type" : "method",
+        "id" : "D9DCAEC1FA401576DE04D0194D1C0CF54",
+        "returnType" : "void",
+        "invokes" : [
+
+        ],
+        "classId" : "D6E429C20E93A3B6787649E4ACE495768",
+        "static" : false,
+        "isSwift" : false
+      }
+    },
+    "super" : "",
+    "name" : "NSObject",
+    "isSwift" : false
+  }
+]
+    </script>
+</head>
+<body>
+    <div id="app">
+        
+    </div>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

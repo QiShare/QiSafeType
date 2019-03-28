@@ -62,6 +62,22 @@ static NSInteger const kCustomErrorCode = 1000;
     return [(NSDictionary *)self valueForKey:key];
 }
 
+- (void)qi_safeAddObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(nullable void *)context {
+    
+    if (!observer || ![keyPath isKindOfClass:[NSString class]] || !keyPath) {
+        return ;
+    }
+    [self addObserver:observer forKeyPath:keyPath options:options context:context];
+}
+
+- (void)qi_safeRemoveObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath {
+    
+    if (!observer || ![keyPath isKindOfClass:[NSString class]] || !keyPath) {
+        return ;
+    }
+    [self removeObserver:observer forKeyPath:keyPath];
+}
+
 @end
 
 
